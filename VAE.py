@@ -5,7 +5,7 @@ import tensorflow as tf
 
 # Define a function to generate a VAE image model
 def load_image():
-    loaded_model = tf.keras.models.load_model('VAE_MODEL_keras')
+    loaded_model = tf.keras.models.load_model('VAE_MODEL.keras')
     num_samples = 1
     latent_dim = 100
     noise = np.random.normal(0, 1, (num_samples, latent_dim))
